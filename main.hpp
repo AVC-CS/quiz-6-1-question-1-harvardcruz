@@ -37,7 +37,7 @@ int getNextPrime(int begin){
         if(prime == 0){
             cout << i << " " << endl;
             prime = i;
-            i=101;
+            
         }
     }
 
@@ -58,7 +58,7 @@ int getPrevPrime(int end){
         if(prime == 0){
             cout << "Previous prime number is: " << i << " " << endl;
             prime = i;
-            i=101;
+            
         }
     }
     return prime;
