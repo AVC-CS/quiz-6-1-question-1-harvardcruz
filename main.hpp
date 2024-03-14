@@ -36,11 +36,12 @@ int getNextPrime(int begin){
         }
         if(prime == 0){
             cout << i << " " << endl;
-
+            prime = i;
             i=101;
         }
     }
-    return begin;
+
+    return prime;
 }
 
 int getPrevPrime(int end){
@@ -56,10 +57,10 @@ int getPrevPrime(int end){
         }
         if(prime == 0){
             cout << "Previous prime number is: " << i << " " << endl;
-            prime = 1;
+            prime = i;
             i=101;
         }
     }
-    return end;
+    return prime;
 
 }
